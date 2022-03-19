@@ -1,0 +1,28 @@
+/*
+ * Escribs un programa que recibs como entrada las logitudes de los dos catetos
+ * a y b de un triangulo rectangulo, y que entregue como salida el largo de la
+ * hipotenusa c del triangulo, dado por teorema de pitagoras c 
+ */
+package pitagoras;
+
+import java.util.Scanner;
+public class pitagoras {
+
+    
+    public static void main(String[] args) {
+        
+        Scanner entrada = new Scanner(System.in);
+        
+        double  catetoA, catetoB;
+        
+        System.out.println("Introduce el valor del catetoA: ");
+        catetoA = entrada.nextDouble();
+        
+        System.out.println("Introduce el valor del catetoB: ");
+        catetoB = entrada.nextDouble();
+        
+        System.out.println("La hipotenusa es: "+Math.sqrt(Math.pow(catetoA,2) + Math.pow (catetoB, 2)));
+        
+    }
+    
+}
